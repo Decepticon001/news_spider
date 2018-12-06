@@ -1,0 +1,115 @@
+2018-04-08 14:04:37 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: find_news)
+2018-04-08 14:04:37 [scrapy.utils.log] INFO: Versions: lxml 3.5.0.0, libxml2 2.9.3, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.5.2 (default, Nov 23 2017, 16:37:01) - [GCC 5.4.0 20160609], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.13.0-36-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-04-08 14:04:37 [scrapy.crawler] INFO: Overridden settings: {'COOKIES_ENABLED': False, 'LOG_FILE': 'mySpider.log', 'DOWNLOAD_DELAY': 3, 'BOT_NAME': 'find_news', 'SPIDER_MODULES': ['find_news.spiders'], 'NEWSPIDER_MODULE': 'find_news.spiders', 'CONCURRENT_REQUESTS': 24}
+2018-04-08 14:04:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2018-04-08 14:04:37 [py.warnings] WARNING: /usr/local/lib/python3.5/dist-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-04-08 14:04:37 [py.warnings] WARNING: /usr/local/lib/python3.5/dist-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-04-08 14:04:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'find_news.middlewares.FindNewsDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-08 14:04:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-08 14:04:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['find_news.pipelines.FindNewsPipeline']
+2018-04-08 14:04:37 [scrapy.core.engine] INFO: Spider opened
+2018-04-08 14:04:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-08 14:04:37 [news] INFO: Spider opened: news
+2018-04-08 14:04:37 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-04-08 14:04:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/l/201804/scroll_04.htm> (referer: None)
+2018-04-08 14:04:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/028173.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:04:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/028173.htm>
+None
+2018-04-08 14:04:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027100.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:04:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027100.htm>
+None
+2018-04-08 14:04:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027329.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:04:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027329.htm>
+None
+2018-04-08 14:04:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027423.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:04:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027423.htm>
+None
+2018-04-08 14:04:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027455.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027455.htm>
+None
+2018-04-08 14:05:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027492.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:05:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027492.htm>
+None
+2018-04-08 14:05:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027506.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:05:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027506.htm>
+None
+2018-04-08 14:05:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027549.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:05:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027549.htm>
+None
+2018-04-08 14:05:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027589.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:05:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027589.htm>
+None
+2018-04-08 14:05:17 [scrapy.crawler] INFO: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+2018-04-08 14:05:17 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-04-08 14:05:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180404/027800.htm> (referer: http://tech.qq.com/l/201804/scroll_04.htm)
+2018-04-08 14:05:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180404/027800.htm>
+None
+2018-04-08 14:05:20 [scrapy.crawler] INFO: Received SIG_SETMASK twice, forcing unclean shutdown
+2018-04-08 14:12:56 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: find_news)
+2018-04-08 14:12:56 [scrapy.utils.log] INFO: Versions: lxml 3.5.0.0, libxml2 2.9.3, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.5.2 (default, Nov 23 2017, 16:37:01) - [GCC 5.4.0 20160609], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.13.0-36-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-04-08 14:12:56 [scrapy.crawler] INFO: Overridden settings: {'SPIDER_MODULES': ['find_news.spiders'], 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'mySpider.log', 'CONCURRENT_REQUESTS': 24, 'COOKIES_ENABLED': False, 'BOT_NAME': 'find_news', 'NEWSPIDER_MODULE': 'find_news.spiders'}
+2018-04-08 14:12:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2018-04-08 14:12:56 [py.warnings] WARNING: /usr/local/lib/python3.5/dist-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-04-08 14:12:56 [py.warnings] WARNING: /usr/local/lib/python3.5/dist-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-04-08 14:12:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'find_news.middlewares.FindNewsDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-08 14:12:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-08 14:12:56 [scrapy.middleware] INFO: Enabled item pipelines:
+['find_news.pipelines.FindNewsPipeline']
+2018-04-08 14:12:56 [scrapy.core.engine] INFO: Spider opened
+2018-04-08 14:12:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-08 14:12:56 [news] INFO: Spider opened: news
+2018-04-08 14:12:56 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-04-08 14:12:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/l/201804/scroll_08.htm> (referer: None)
+2018-04-08 14:13:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180408/012318.htm> (referer: http://tech.qq.com/l/201804/scroll_08.htm)
+2018-04-08 14:13:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180408/012318.htm>
+None
+2018-04-08 14:13:03 [scrapy.crawler] INFO: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+2018-04-08 14:13:03 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-04-08 14:13:03 [scrapy.crawler] INFO: Received SIG_SETMASK twice, forcing unclean shutdown

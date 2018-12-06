@@ -1,0 +1,214 @@
+2018-04-12 13:40:16 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: find_news)
+2018-04-12 13:40:16 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.5 (default, Mar 30 2018, 06:41:53) - [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.5.0-x86_64-i386-64bit
+2018-04-12 13:40:16 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'find_news', 'CONCURRENT_REQUESTS': 24, 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'logs/find_news/news/f73af7e23e1311e897946c40089f7410.log', 'NEWSPIDER_MODULE': 'find_news.spiders', 'SPIDER_MODULES': ['find_news.spiders']}
+2018-04-12 13:40:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-04-12 13:40:16 [py.warnings] WARNING: /Users/spz/find_news/venv/lib/python3.6/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.useragent.UserAgentMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-04-12 13:40:16 [py.warnings] WARNING: /Users/spz/find_news/venv/lib/python3.6/site-packages/scrapy/utils/deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-04-12 13:40:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'find_news.middlewares.FindNewsDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-12 13:40:16 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-12 13:40:16 [scrapy.middleware] INFO: Enabled item pipelines:
+['find_news.pipelines.FindNewsPipeline']
+2018-04-12 13:40:16 [scrapy.core.engine] INFO: Spider opened
+2018-04-12 13:40:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-12 13:40:16 [news] INFO: Spider opened: news
+2018-04-12 13:40:16 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6038
+2018-04-12 13:40:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/l/201804/scroll_12.htm> (referer: http://tech.qq.com/)
+2018-04-12 13:40:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/011736.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/011736.htm>
+None
+2018-04-12 13:40:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/012403.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/012403.htm>
+None
+2018-04-12 13:40:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/012819.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/012819.htm>
+None
+2018-04-12 13:40:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/013153.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/013153.htm>
+None
+2018-04-12 13:40:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/013550.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/013550.htm>
+None
+2018-04-12 13:40:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/013737.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/013737.htm>
+None
+2018-04-12 13:40:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/014252.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/014252.htm>
+None
+2018-04-12 13:40:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/014729.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/014729.htm>
+None
+2018-04-12 13:40:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/014825.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/014825.htm>
+None
+2018-04-12 13:40:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/014439.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/014439.htm>
+None
+2018-04-12 13:40:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/014889.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:40:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/014889.htm>
+None
+2018-04-12 13:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/014902.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/014902.htm>
+None
+2018-04-12 13:41:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/015019.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/015019.htm>
+None
+2018-04-12 13:41:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002336.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002336.htm>
+None
+2018-04-12 13:41:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002455.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002455.htm>
+None
+2018-04-12 13:41:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002539.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002539.htm>
+None
+2018-04-12 13:41:16 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 17 pages/min), scraped 16 items (at 16 items/min)
+2018-04-12 13:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002585.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002585.htm>
+None
+2018-04-12 13:41:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002730.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002730.htm>
+None
+2018-04-12 13:41:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002892.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002892.htm>
+None
+2018-04-12 13:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002848.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002848.htm>
+None
+2018-04-12 13:41:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/003057.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/003057.htm>
+None
+2018-04-12 13:41:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/003097.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/003097.htm>
+None
+2018-04-12 13:41:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002985.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002985.htm>
+None
+2018-04-12 13:41:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/003604.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/003604.htm>
+None
+2018-04-12 13:41:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/000281.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/000281.htm>
+None
+2018-04-12 13:41:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/000522.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/000522.htm>
+None
+2018-04-12 13:41:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/000553.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:41:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/000553.htm>
+None
+2018-04-12 13:42:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/000781.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/000781.htm>
+None
+2018-04-12 13:42:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/000922.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/000922.htm>
+None
+2018-04-12 13:42:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/001804.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/001804.htm>
+None
+2018-04-12 13:42:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002182.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002182.htm>
+None
+2018-04-12 13:42:16 [scrapy.extensions.logstats] INFO: Crawled 32 pages (at 15 pages/min), scraped 31 items (at 15 items/min)
+2018-04-12 13:42:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002232.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002232.htm>
+None
+2018-04-12 13:42:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/002075.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/002075.htm>
+None
+2018-04-12 13:42:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/003992.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/003992.htm>
+None
+2018-04-12 13:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/004241.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/004241.htm>
+None
+2018-04-12 13:42:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/004599.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/004599.htm>
+None
+2018-04-12 13:42:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/004529.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/004529.htm>
+None
+2018-04-12 13:42:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/005823.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/005823.htm>
+None
+2018-04-12 13:42:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/006199.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/006199.htm>
+None
+2018-04-12 13:42:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/005170.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/005170.htm>
+None
+2018-04-12 13:42:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/006716.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/006716.htm>
+None
+2018-04-12 13:42:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/007641.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/007641.htm>
+None
+2018-04-12 13:42:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/007903.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/007903.htm>
+None
+2018-04-12 13:42:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/008612.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/008612.htm>
+None
+2018-04-12 13:42:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/008764.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:42:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/008764.htm>
+None
+2018-04-12 13:43:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/009352.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:43:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/009352.htm>
+None
+2018-04-12 13:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/009620.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/009620.htm>
+None
+2018-04-12 13:43:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/011166.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:43:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/011166.htm>
+None
+2018-04-12 13:43:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/011244.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:43:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/011244.htm>
+None
+2018-04-12 13:43:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://tech.qq.com/a/20180412/011468.htm> (referer: http://tech.qq.com/l/201804/scroll_12.htm)
+2018-04-12 13:43:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://tech.qq.com/a/20180412/011468.htm>
+None
+2018-04-12 13:43:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-04-12 13:43:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 12576,
+ 'downloader/request_count': 51,
+ 'downloader/request_method_count/GET': 51,
+ 'downloader/response_bytes': 776010,
+ 'downloader/response_count': 51,
+ 'downloader/response_status_count/200': 51,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 12, 5, 43, 13, 975621),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 102,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 82964480,
+ 'memusage/startup': 69820416,
+ 'request_depth_max': 1,
+ 'response_received_count': 51,
+ 'scheduler/dequeued': 51,
+ 'scheduler/dequeued/memory': 51,
+ 'scheduler/enqueued': 51,
+ 'scheduler/enqueued/memory': 51,
+ 'start_time': datetime.datetime(2018, 4, 12, 5, 40, 16, 397541)}
+2018-04-12 13:43:13 [scrapy.core.engine] INFO: Spider closed (finished)
